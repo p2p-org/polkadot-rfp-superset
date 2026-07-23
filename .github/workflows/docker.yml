@@ -23,7 +23,7 @@ jobs:
           token_format: 'access_token'
           credentials_json: '${{ secrets.GOOGLE_ARTIFACTREGISTRY_CREDENTIALS }}'
 
-      - uses: 'docker/login-action@dd4fa0671be5250ee6f50aedf4cb05514abda2c7' # v1
+      - uses: 'docker/login-action@06fb636fac595d6fb4b28a5dfcb21a6f5091859c' # v4
         with:
           registry: 'europe-west4-docker.pkg.dev'
           username: 'oauth2accesstoken'
