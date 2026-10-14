@@ -5,6 +5,9 @@ on:
     branches:
       - 'master'
 
+permissions:
+  contents: write # git push
+
 jobs:
   docker-build:
     name: docker-build
